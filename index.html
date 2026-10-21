@@ -4,25 +4,90 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Appelo – Attendance for Google Meet™</title>
-<meta name="description" content="See who joined, when and for how long. Find absent students. Export to Excel. Data stays in your browser.">
+<meta name="description" content="Appelo is a Chrome extension that records who joined a Google Meet call, when and for how long, finds absent students and exports attendance to CSV or Excel. Data stays in your browser.">
 <style>
-  :root { color-scheme: light dark; --bg: #fff; --fg: #1f2328; --muted: #5f6b7a; --accent: #1a56c8; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #16191d; --fg: #e6e9ee; --muted: #9aa5b4; --accent: #8ab4f8; } }
-  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif; }
-  main { max-width: 560px; padding: 32px 20px; text-align: center; }
-  h1 { font-size: 40px; margin: 0 0 6px; }
-  p { margin: 8px 0; color: var(--muted); }
+  :root { color-scheme: light dark; --bg: #fff; --fg: #1f2328; --muted: #5f6b7a; --line: #e3e7ec; --accent: #1a56c8; --card: #f6f8fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #16191d; --fg: #e6e9ee; --muted: #9aa5b4; --line: #333a43; --accent: #8ab4f8; --card: #1d2126; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 20px; }
+  header.hero { text-align: center; padding: 56px 0 28px; }
+  h1 { font-size: 44px; line-height: 1.15; margin: 0 0 8px; }
+  h2 { font-size: 26px; margin: 0 0 14px; }
+  h3 { font-size: 18px; margin: 0 0 6px; }
+  .tag { font-size: 20px; color: var(--muted); margin: 0 auto; max-width: 620px; }
+  section { padding: 34px 0; border-top: 1px solid var(--line); }
+  p { margin: 8px 0; }
+  .muted { color: var(--muted); }
   a { color: var(--accent); }
-  .links { margin-top: 26px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; }
+  ul { padding-inline-start: 22px; }
+  li { margin: 6px 0; }
+  .shots { display: grid; gap: 22px; }
+  .shots img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; display: block; }
+  .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin-top: 14px; }
+  .plan { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+  .plan .price { font-size: 26px; font-weight: 700; margin: 2px 0 6px; }
+  .plan p { font-size: 15px; color: var(--muted); margin: 4px 0; }
+  footer { border-top: 1px solid var(--line); padding: 22px 0 44px; font-size: 14px; color: var(--muted); }
+  footer a { margin-inline-end: 16px; }
 </style>
 </head>
 <body>
-<main>
-  <h1>Appelo</h1>
-  <p>Attendance for Google Meet™. See who joined, when and for how long. Find absent students. Export to Excel.</p>
-  <p>Everything stays in your browser.</p>
-  <div class="links"><a href="/privacy/">Privacy policy</a></div>
-  <p style="font-size:14px;margin-top:30px">Appelo is not affiliated with Google. Google Meet is a trademark of Google LLC.</p>
-</main>
+<div class="wrap">
+  <header class="hero">
+    <h1>Appelo</h1>
+    <p class="tag">Attendance for Google Meet™. See who joined, when and for how long. Find the absent students. Export to CSV or Excel.</p>
+    <p class="muted">A Chrome extension for teachers and tutors. Available soon on the Chrome Web Store.</p>
+  </header>
+
+  <section>
+    <h2>What Appelo does</h2>
+    <p>Appelo reads the participant list on the Google Meet page during a call and notes when each person joined and left. When the call ends you get the attendance in one click, as a file that opens correctly in Excel (accents and Arabic included).</p>
+    <ul>
+      <li><strong>Live roster</strong>: who is in the call now, arrival time, minutes present and % of the meeting.</li>
+      <li><strong>Rejoins handled</strong>: someone who drops and comes back is counted once, with the right total time.</li>
+      <li><strong>Export</strong> to CSV (free) or Excel (Pro).</li>
+      <li><strong>Pro</strong>: class lists to find who was absent, late or only partly present; history of all meetings with search; attendance report over time per class; automatic export when the call ends.</li>
+      <li><strong>Six languages</strong>: English, Italian, French, Spanish, German and Arabic (right-to-left).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <img src="img/01-live-roster.jpg" alt="Live roster during a Google Meet call, with join times and minutes present" loading="lazy">
+      <img src="img/02-absent-students.jpg" alt="Attendance of a class with absent, late and partial students" loading="lazy">
+      <img src="img/03-attendance-over-time.jpg" alt="Attendance report over several lessons for a class" loading="lazy">
+    </div>
+    <p class="muted" style="font-size:14px">Screenshots use invented names and data.</p>
+  </section>
+
+  <section>
+    <h2>Your data stays with you</h2>
+    <p>There is no Appelo server, no account, no analytics and no ads. Attendance, class lists and settings are saved only in your own browser. The only network request Appelo ever makes is the license check for Pro users. <a href="/privacy/">Read the privacy policy</a> (six languages).</p>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p>Appelo is free to install and use. Pro is optional and sold as a license key through Lemon Squeezy, our payment provider, which handles payment and VAT.</p>
+    <div class="plans">
+      <div class="plan"><h3>Free</h3><div class="price">€0</div><p>Live roster, CSV export, the last 3 meetings, six languages.</p></div>
+      <div class="plan"><h3>Pro monthly</h3><div class="price">€3.99</div><p>per month. All Pro features. Cancel any time.</p></div>
+      <div class="plan"><h3>Pro yearly</h3><div class="price">€29</div><p>per year. All Pro features, about 40% less than monthly.</p></div>
+      <div class="plan"><h3>Pro lifetime</h3><div class="price">€59</div><p>one payment, no renewal. All Pro features, for as long as Appelo exists.</p></div>
+    </div>
+    <p class="muted" style="font-size:14px">A Pro license key works on up to 3 devices.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions or problems: <a href="mailto:appelo.app01@gmail.com">appelo.app01@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <a href="/privacy/">Privacy policy</a>
+    <p>Appelo is not affiliated with Google. Google Meet is a trademark of Google LLC.</p>
+  </footer>
+</div>
 </body>
 </html>
