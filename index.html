@@ -28,6 +28,9 @@
   .plan { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
   .plan .price { font-size: 26px; font-weight: 700; margin: 2px 0 6px; }
   .plan p { font-size: 15px; color: var(--muted); margin: 4px 0; }
+  .btn { display: inline-block; margin-top: 10px; padding: 9px 16px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; font-size: 15px; }
+  @media (prefers-color-scheme: dark) { .btn { color: #101318; } }
+  .hero .btn { font-size: 17px; padding: 12px 22px; }
   footer { border-top: 1px solid var(--line); padding: 22px 0 44px; font-size: 14px; color: var(--muted); }
   footer a { margin-inline-end: 16px; }
 </style>
@@ -37,7 +40,8 @@
   <header class="hero">
     <h1>Appelo</h1>
     <p class="tag">Attendance for Google Meet™. See who joined, when and for how long. Find the absent students. Export to CSV or Excel.</p>
-    <p class="muted">A Chrome extension for teachers and tutors. Available soon on the Chrome Web Store.</p>
+    <p class="muted">A Chrome extension for teachers and tutors.</p>
+    <a class="btn" href="https://chromewebstore.google.com/detail/gkokfmbjipocpajnpjgipoipjolobmfo">Add to Chrome - it's free</a>
   </header>
 
   <section>
@@ -71,10 +75,10 @@
     <h2>Pricing</h2>
     <p>Appelo is free to install and use. Pro is optional and sold as a license key through Lemon Squeezy, our payment provider, which handles payment and VAT.</p>
     <div class="plans">
-      <div class="plan"><h3>Free</h3><div class="price">€0</div><p>Live roster, CSV export, the last 3 meetings, six languages.</p></div>
-      <div class="plan"><h3>Pro monthly</h3><div class="price">€3.99</div><p>per month. All Pro features. Cancel any time.</p></div>
-      <div class="plan"><h3>Pro yearly</h3><div class="price">€29</div><p>per year. All Pro features, about 40% less than monthly.</p></div>
-      <div class="plan"><h3>Pro lifetime</h3><div class="price">€59</div><p>one payment, no renewal. All Pro features, for as long as Appelo exists.</p></div>
+      <div class="plan"><h3>Free</h3><div class="price">€0</div><p>Live roster, CSV export, the last 3 meetings, six languages.</p><a class="btn" href="https://chromewebstore.google.com/detail/gkokfmbjipocpajnpjgipoipjolobmfo">Add to Chrome</a></div>
+      <div class="plan"><h3>Pro monthly</h3><div class="price">€3.99</div><p>per month. All Pro features. Cancel any time.</p><a class="btn" href="https://appelo.lemonsqueezy.com/checkout/buy/81945b7e-f473-4130-a58d-a47bd01e769b">Get Pro</a></div>
+      <div class="plan"><h3>Pro yearly</h3><div class="price">€29</div><p>per year. All Pro features, about 40% less than monthly.</p><a class="btn" href="https://appelo.lemonsqueezy.com/checkout/buy/81945b7e-f473-4130-a58d-a47bd01e769b">Get Pro</a></div>
+      <div class="plan"><h3>Pro lifetime</h3><div class="price">€59</div><p>one payment, no renewal. All Pro features, for as long as Appelo exists.</p><a class="btn" href="https://appelo.lemonsqueezy.com/checkout/buy/8338e275-478a-4a60-9c33-49dc5b8efe4f">Get Pro</a></div>
     </div>
     <p class="muted" style="font-size:14px">A Pro license key works on up to 3 devices.</p>
   </section>
