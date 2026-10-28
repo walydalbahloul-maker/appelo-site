@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Take Attendance in Google Meet (2026 Guide)</title>
+<meta name="description" content="Three ways to track who attended a Google Meet call: by hand, with Google's attendance report, and with a Chrome extension. What you need, pros and cons, export to Excel.">
+<link rel="canonical" href="https://appelo.app/en/google-meet-attendance/">
+<link rel="alternate" hreflang="en" href="https://appelo.app/en/google-meet-attendance/">
+<link rel="alternate" hreflang="it" href="https://appelo.app/presenze-google-meet/">
+<style>
+  :root { color-scheme: light dark; --bg: #fff; --fg: #1f2328; --muted: #5f6b7a; --line: #e3e7ec; --accent: #1a56c8; --card: #f6f8fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #16191d; --fg: #e6e9ee; --muted: #9aa5b4; --line: #333a43; --accent: #8ab4f8; --card: #1d2126; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif; }
+  .wrap { max-width: 740px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 22px 0 6px; border-bottom: 1px solid var(--line); }
+  header a { font-weight: 700; text-decoration: none; font-size: 20px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 28px 0 10px; }
+  h2 { font-size: 24px; margin: 38px 0 8px; }
+  h3 { font-size: 19px; margin: 24px 0 4px; }
+  p, li { margin: 9px 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: start; vertical-align: top; padding: 9px 10px; border: 1px solid var(--line); }
+  th { background: var(--card); }
+  .btn { display: inline-block; margin-top: 8px; padding: 11px 20px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .btn { color: #101318; } }
+  footer { border-top: 1px solid var(--line); margin-top: 44px; padding: 20px 0 44px; font-size: 14px; color: var(--muted); }
+  footer a { margin-inline-end: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="/">Appelo</a></header>
+
+  <article>
+    <h1>How to take attendance in Google Meet</h1>
+    <p class="muted">Last updated: 28 October 2026 · <a href="/presenze-google-meet/" hreflang="it">Italiano</a></p>
+    <p>If you teach, tutor or run meetings on Google Meet, sooner or later you need to know <strong>who was there, when they joined and how long they stayed</strong>. Meet does not always give you that, and it depends on the kind of account you have. This guide covers the three ways to do it, with the pros and cons of each, so you can pick the right one.</p>
+
+    <h2>1. By hand, from the participant list</h2>
+    <p>During the call, open the <strong>People</strong> panel and write the names down on a sheet or register. It works with any account and it is free.</p>
+    <p><strong>The catch</strong>: you have to do it while you are teaching. If someone drops and rejoins because of a connection problem, or the class is large, mistakes are easy, and you have no exact times.</p>
+
+    <h2>2. Google Meet's own attendance report</h2>
+    <p>Some paid Google Workspace editions include <strong>attendance tracking</strong>. According to Google's help page, it is available to Workspace Essentials, Business Plus, the Enterprise editions, Education Plus and the Teaching and Learning Upgrade. It is not available on a regular free Gmail account.</p>
+    <h3>How to turn it on</h3>
+    <ul>
+      <li>During the meeting, open <strong>Host controls</strong> and switch on <strong>Attendance tracking</strong>.</li>
+      <li>Or, in Google Calendar, open the event, go to the conference settings and tick the same option before the meeting.</li>
+    </ul>
+    <h3>What you get</h3>
+    <p>After the meeting, the organizer receives an email with a Google Sheets file that has name, email, time joined, time left and duration. If someone joins and leaves several times, the report shows the <strong>total duration</strong>, not the time of each visit.</p>
+    <p><strong>The catch</strong>: you need a paid Workspace edition and your domain admin can turn the feature off. The report arrives only after the meeting, so you cannot check who is in the call <em>while</em> you are teaching.</p>
+    <p class="muted">Source: <a href="https://support.google.com/meet/answer/10090454" rel="noopener">Google Meet Help, "Track attendance"</a>. Editions and rules can change: always check the current page.</p>
+
+    <h2>3. A Chrome extension: Appelo</h2>
+    <p>If you do not have an edition that includes Google's report, or you want to see attendance <strong>in real time</strong>, you can use an extension. <a href="/">Appelo</a> is the one I built: it reads the participant list on the Meet page during the call and records when each person joined and left.</p>
+    <ul>
+      <li><strong>Live roster</strong>: see who is in the call now, since when, and for how many minutes.</li>
+      <li><strong>Rejoins handled</strong>: someone who leaves and comes back is counted once, with the right total time.</li>
+      <li><strong>CSV export</strong>, free, which opens correctly in Excel (accents and Arabic included).</li>
+      <li><strong>No special Workspace edition needed</strong>: it reads the Meet page you see, so it does not depend on Google's paid features.</li>
+      <li><strong>With Pro</strong> (optional): class lists to find absent, late and partly present students, Excel export, a history of all your lessons, an attendance report over time and automatic export when the call ends.</li>
+      <li><strong>Privacy</strong>: there is no Appelo server and no account. Data stays in your browser. <a href="/privacy/#en">Read the privacy policy</a>.</li>
+    </ul>
+    <p class="muted">Appelo is not affiliated with Google. Google Meet is a trademark of Google LLC.</p>
+    <p><a class="btn" href="https://chromewebstore.google.com/detail/gkokfmbjipocpajnpjgipoipjolobmfo">Add to Chrome - it's free</a></p>
+
+    <h2>Quick comparison</h2>
+    <table>
+      <thead><tr><th></th><th>By hand</th><th>Google's report</th><th>Appelo</th></tr></thead>
+      <tbody>
+        <tr><th>Cost</th><td>Free</td><td>Included in some paid Workspace editions</td><td>Free; Pro is optional</td></tr>
+        <tr><th>Needs a specific Workspace edition</th><td>No</td><td>Yes</td><td>No</td></tr>
+        <tr><th>Live attendance</th><td>Yes, by hand</td><td>No, arrives after the meeting</td><td>Yes</td></tr>
+        <tr><th>Join and leave times</th><td>Only if you write them</td><td>Joined, left and total duration</td><td>Joined, left, minutes and % of the meeting</td></tr>
+        <tr><th>Excel export</th><td>By hand</td><td>Google Sheets file by email</td><td>CSV free, Excel with Pro</td></tr>
+        <tr><th>Class list and absentees</th><td>By hand</td><td>No</td><td>With Pro</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Frequently asked questions</h2>
+    <h3>How do I export the Google Meet participant list to Excel?</h3>
+    <p>Meet has no button to export the list while the call is running. You have two options: Google's attendance report (only on the editions that include it) or an extension like Appelo, which gives you a CSV file to open in Excel at the end of the lesson.</p>
+    <h3>Does Appelo work with a free Gmail account?</h3>
+    <p>It does not need a paid Workspace edition: it reads the participant list you see on the Meet page. It works in Chrome and Chromium-based browsers on a computer.</p>
+    <h3>What if a student leaves and rejoins?</h3>
+    <p>Appelo treats an absence as a real leave only if it lasts more than 15 seconds, and adds up the time of every visit. A connection drop does not distort the attendance.</p>
+    <h3>Where is the data stored?</h3>
+    <p>Only in your browser. Appelo does not send participant names to any server.</p>
+    <h3>How much does Pro cost?</h3>
+    <p>EUR 3.99 a month, EUR 29 a year or EUR 59 once. The free version has no time limit and keeps your last 3 meetings; see the <a href="/#pricing">pricing section</a>.</p>
+  </article>
+
+  <footer>
+    <a href="/">Appelo</a> <a href="/privacy/#en">Privacy</a> <a href="mailto:appelo.app01@gmail.com">Contact</a>
+    <p>Appelo is not affiliated with Google. Google Meet is a trademark of Google LLC.</p>
+  </footer>
+</div>
+</body>
+</html>

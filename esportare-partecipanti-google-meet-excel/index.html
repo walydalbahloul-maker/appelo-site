@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esportare i partecipanti di Google Meet in Excel</title>
+<meta name="description" content="Come esportare l'elenco dei partecipanti di una riunione Google Meet in Excel o CSV, con orari di entrata e uscita: il report di Google e un'estensione, passo per passo.">
+<link rel="canonical" href="https://appelo.app/esportare-partecipanti-google-meet-excel/">
+<style>
+  :root { color-scheme: light dark; --bg: #fff; --fg: #1f2328; --muted: #5f6b7a; --line: #e3e7ec; --accent: #1a56c8; --card: #f6f8fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #16191d; --fg: #e6e9ee; --muted: #9aa5b4; --line: #333a43; --accent: #8ab4f8; --card: #1d2126; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif; }
+  .wrap { max-width: 740px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 22px 0 6px; border-bottom: 1px solid var(--line); }
+  header a { font-weight: 700; text-decoration: none; font-size: 20px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 28px 0 10px; }
+  h2 { font-size: 24px; margin: 38px 0 8px; }
+  h3 { font-size: 19px; margin: 24px 0 4px; }
+  p, li { margin: 9px 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: 15px; }
+  .btn { display: inline-block; margin-top: 8px; padding: 11px 20px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .btn { color: #101318; } }
+  footer { border-top: 1px solid var(--line); margin-top: 44px; padding: 20px 0 44px; font-size: 14px; color: var(--muted); }
+  footer a { margin-inline-end: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="/">Appelo</a></header>
+
+  <article>
+    <h1>Come esportare i partecipanti di Google Meet in Excel</h1>
+    <p class="muted">Ultimo aggiornamento: 28 ottobre 2026</p>
+    <p>Durante una chiamata, Google Meet mostra l'elenco delle persone presenti, ma <strong>non ha un pulsante per esportarlo</strong>. Se ti serve un file Excel con i nomi, gli orari di entrata e di uscita e il tempo di permanenza, ci sono due strade. Questa guida le spiega passo per passo.</p>
+
+    <h2>Metodo 1: il report di presenze di Google</h2>
+    <p>Se usi un'edizione di Google Workspace che include il <strong>monitoraggio delle presenze</strong> (per esempio Education Plus, Teaching and Learning Upgrade, Business Plus o le edizioni Enterprise: le edizioni esatte sono sulla <a href="https://support.google.com/meet/answer/10090454" rel="noopener">pagina di aiuto di Google</a>), Meet può generare un report in automatico.</p>
+    <ol>
+      <li>Prima o durante la riunione, apri i <strong>controlli dell'organizzatore</strong> e attiva il <strong>monitoraggio delle presenze</strong>. In alternativa, attivalo dall'evento in Google Calendar.</li>
+      <li>Quando la riunione finisce, l'organizzatore riceve una <strong>e-mail con un foglio Google Sheets</strong>: nome, e-mail, ora di ingresso, ora di uscita e durata.</li>
+      <li>Apri il foglio e scegli <strong>File, Scarica, Microsoft Excel (.xlsx)</strong>.</li>
+    </ol>
+    <p><strong>Limiti</strong>: serve un'edizione a pagamento, il report arriva solo dopo la riunione e, se uno studente entra ed esce più volte, trovi la durata totale ma non gli orari di ogni ingresso.</p>
+
+    <h2>Metodo 2: un'estensione per Chrome (Appelo)</h2>
+    <p>Se non hai l'edizione giusta, o se vuoi il file subito e senza e-mail, puoi usare <a href="/">Appelo</a>, un'estensione gratuita per Chrome che ho creato io. Ecco come si usa:</p>
+    <ol>
+      <li><a href="https://chromewebstore.google.com/detail/gkokfmbjipocpajnpjgipoipjolobmfo">Installa Appelo dal Chrome Web Store</a>.</li>
+      <li>Entra in una riunione su Google Meet da Chrome. Appelo legge da sola l'elenco dei partecipanti (apre lei il pannello Persone, se serve) e registra quando ognuno entra ed esce. Non devi fare nulla.</li>
+      <li>Quando la chiamata finisce, in basso compare il messaggio <strong>"Presenze salvate"</strong> con il pulsante <strong>Esporta CSV</strong>. Premilo.</li>
+      <li>Puoi anche farlo dopo: clicca l'icona di Appelo nella barra di Chrome e premi <strong>Esporta CSV</strong>.</li>
+      <li>Apri il file scaricato con Excel.</li>
+    </ol>
+    <h3>Cosa c'è nel file</h3>
+    <p>Una riga per partecipante, con il nome, il <strong>primo ingresso</strong>, l'<strong>ultima uscita</strong>, i <strong>minuti totali</strong> di presenza e la <strong>percentuale della riunione</strong>. Gli orari sono nel tuo fuso orario. Chi esce e rientra viene contato una volta, con il tempo totale giusto.</p>
+    <h3>Excel in formato .xlsx</h3>
+    <p>Il CSV è gratuito. Con il piano <strong>Pro</strong> (facoltativo) trovi anche il pulsante <strong>Esporta Excel</strong>, che crea direttamente un file .xlsx, e puoi attivare l'<strong>esportazione automatica</strong>: a fine chiamata il file si salva da solo nella cartella <em>Download/Appelo</em>. Con gli elenchi di classe il file include anche chi era assente.</p>
+    <p><a class="btn" href="https://chromewebstore.google.com/detail/gkokfmbjipocpajnpjgipoipjolobmfo">Aggiungi a Chrome, è gratis</a></p>
+
+    <h2>Problemi comuni</h2>
+    <h3>Il CSV si apre tutto in una colonna</h3>
+    <p>Dipende dal separatore di elenco del tuo computer. Appelo usa il punto e virgola dove il computer usa la virgola come separatore decimale (come in Italia), quindi di solito si apre bene. Se vedi comunque tutto in una colonna, in Excel usa <strong>Dati, Da testo/CSV</strong> e scegli il separatore corretto.</p>
+    <h3>Gli accenti o le lettere arabe sono sbagliati</h3>
+    <p>I file di Appelo sono salvati in UTF-8 con l'indicazione per Excel, quindi accenti e arabo si leggono bene. Se apri il CSV con un altro programma, scegli la codifica UTF-8.</p>
+    <h3>I nomi uguali</h3>
+    <p>Se due persone hanno lo stesso nome nella chiamata, Appelo le distingue con "#2" e le conta separatamente.</p>
+    <p class="muted">Appelo non è affiliata a Google. Google Meet e Google Sheets sono marchi di Google LLC. Vedi anche la guida <a href="/presenze-google-meet/">Come segnare le presenze su Google Meet</a>.</p>
+  </article>
+
+  <footer>
+    <a href="/">Appelo</a> <a href="/privacy/#it">Privacy</a> <a href="mailto:appelo.app01@gmail.com">Contatti</a>
+    <p>Appelo non è affiliata a Google. Google Meet è un marchio di Google LLC.</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Come segnare le presenze su Google Meet (guida 2026)</title>
+<meta name="description" content="Tre modi per segnare chi c'era a una lezione su Google Meet: a mano, con il report di Google e con un'estensione. Cosa serve, pro e contro, esportazione in Excel.">
+<link rel="canonical" href="https://appelo.app/presenze-google-meet/">
+<link rel="alternate" hreflang="it" href="https://appelo.app/presenze-google-meet/">
+<link rel="alternate" hreflang="en" href="https://appelo.app/en/google-meet-attendance/">
+<style>
+  :root { color-scheme: light dark; --bg: #fff; --fg: #1f2328; --muted: #5f6b7a; --line: #e3e7ec; --accent: #1a56c8; --card: #f6f8fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #16191d; --fg: #e6e9ee; --muted: #9aa5b4; --line: #333a43; --accent: #8ab4f8; --card: #1d2126; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif; }
+  .wrap { max-width: 740px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 22px 0 6px; border-bottom: 1px solid var(--line); }
+  header a { font-weight: 700; text-decoration: none; font-size: 20px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 28px 0 10px; }
+  h2 { font-size: 24px; margin: 38px 0 8px; }
+  h3 { font-size: 19px; margin: 24px 0 4px; }
+  p, li { margin: 9px 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: start; vertical-align: top; padding: 9px 10px; border: 1px solid var(--line); }
+  th { background: var(--card); }
+  .box { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin: 22px 0; }
+  .btn { display: inline-block; margin-top: 8px; padding: 11px 20px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .btn { color: #101318; } }
+  footer { border-top: 1px solid var(--line); margin-top: 44px; padding: 20px 0 44px; font-size: 14px; color: var(--muted); }
+  footer a { margin-inline-end: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="/">Appelo</a></header>
+
+  <article>
+    <h1>Come segnare le presenze su Google Meet</h1>
+    <p class="muted">Ultimo aggiornamento: 28 ottobre 2026 · <a href="/en/google-meet-attendance/" hreflang="en">English</a></p>
+    <p>Se fai lezione, corsi o riunioni su Google Meet, prima o poi ti serve sapere <strong>chi c'era, a che ora è entrato e per quanto tempo è rimasto</strong>. Meet non lo mette sempre a disposizione, e dipende da che tipo di account hai. Questa guida spiega i tre modi che esistono, con pro e contro di ciascuno, così scegli quello giusto per te.</p>
+
+    <h2>1. A mano, guardando l'elenco dei partecipanti</h2>
+    <p>Durante la chiamata apri il pannello <strong>Persone</strong> e annoti i nomi su un foglio o su un registro. Funziona con qualsiasi account, ed è gratis.</p>
+    <p><strong>Il limite</strong>: devi farlo mentre fai lezione. Se qualcuno esce e rientra per un problema di connessione, o se la classe è numerosa, è facile sbagliare, e non hai gli orari precisi.</p>
+
+    <h2>2. Il report di presenze di Google Meet</h2>
+    <p>Alcune edizioni a pagamento di Google Workspace includono il <strong>monitoraggio delle presenze</strong>. Secondo la pagina di aiuto di Google, è disponibile per Workspace Essentials, Business Plus, le edizioni Enterprise, Education Plus e il Teaching and Learning Upgrade. Non è disponibile per un normale account Gmail gratuito.</p>
+    <h3>Come si attiva</h3>
+    <ul>
+      <li>Durante la riunione apri i <strong>controlli dell'organizzatore</strong> (in inglese <em>Host controls</em>) e attiva <strong>Monitoraggio delle presenze</strong> (<em>Attendance tracking</em>).</li>
+      <li>Oppure, in Google Calendar, apri l'evento, vai nelle impostazioni della conferenza e spunta la stessa opzione prima della riunione.</li>
+    </ul>
+    <h3>Cosa ottieni</h3>
+    <p>Dopo la riunione l'organizzatore riceve una e-mail con un foglio Google Sheets che contiene nome, indirizzo e-mail, ora di ingresso, ora di uscita e durata. Se qualcuno entra ed esce più volte, nel report compare la <strong>durata totale</strong>, non gli orari di ogni ingresso.</p>
+    <p><strong>Il limite</strong>: serve un'edizione a pagamento di Workspace e l'amministratore del dominio può aver disattivato la funzione. Il report arriva solo a fine riunione, quindi non puoi consultare chi c'è <em>mentre</em> fai lezione.</p>
+    <p class="muted">Fonte: <a href="https://support.google.com/meet/answer/10090454" rel="noopener">pagina di aiuto di Google Meet "Track attendance"</a>. Le edizioni e le regole possono cambiare: controlla sempre la pagina aggiornata.</p>
+
+    <h2>3. Un'estensione per Chrome: Appelo</h2>
+    <p>Se non hai un'edizione che include il report di Google, o se vuoi vedere le presenze <strong>in tempo reale</strong>, puoi usare un'estensione. <a href="/">Appelo</a> è quella che ho creato io: legge l'elenco dei partecipanti sulla pagina di Meet durante la chiamata e registra quando ognuno è entrato e uscito.</p>
+    <ul>
+      <li><strong>Elenco in tempo reale</strong>: vedi chi c'è adesso, da che ora e da quanti minuti.</li>
+      <li><strong>Rientri gestiti</strong>: chi esce e rientra viene contato una volta sola, con il tempo totale giusto.</li>
+      <li><strong>Esportazione in CSV</strong>, gratis, che si apre bene in Excel (accenti e arabo compresi).</li>
+      <li><strong>Non richiede un'edizione particolare di Workspace</strong>: legge la pagina di Meet che vedi tu, quindi non dipende dalle funzioni a pagamento di Google.</li>
+      <li><strong>Con Pro</strong> (facoltativo): elenchi di classe per trovare assenti, ritardatari e presenze parziali, esportazione Excel, storico di tutte le lezioni, report di frequenza nel tempo ed esportazione automatica a fine chiamata.</li>
+      <li><strong>Privacy</strong>: non c'è un server di Appelo e non serve un account. I dati restano nel tuo browser. <a href="/privacy/#it">Leggi l'informativa</a>.</li>
+    </ul>
+    <p class="muted">Appelo non è affiliata a Google. Google Meet è un marchio di Google LLC.</p>
+    <p><a class="btn" href="https://chromewebstore.google.com/detail/gkokfmbjipocpajnpjgipoipjolobmfo">Aggiungi a Chrome, è gratis</a></p>
+
+    <h2>Confronto rapido</h2>
+    <table>
+      <thead><tr><th></th><th>A mano</th><th>Report di Google</th><th>Appelo</th></tr></thead>
+      <tbody>
+        <tr><th>Costo</th><td>Gratis</td><td>Incluso in alcune edizioni a pagamento di Workspace</td><td>Gratis; Pro facoltativo</td></tr>
+        <tr><th>Serve un'edizione Workspace particolare</th><td>No</td><td>Sì</td><td>No</td></tr>
+        <tr><th>Presenze in tempo reale</th><td>Sì, a mano</td><td>No, arriva dopo la riunione</td><td>Sì</td></tr>
+        <tr><th>Orari di entrata e uscita</th><td>Solo se li annoti</td><td>Ingresso, uscita e durata totale</td><td>Ingresso, uscita, minuti e % della lezione</td></tr>
+        <tr><th>Esportazione in Excel</th><td>Da fare a mano</td><td>Foglio Google Sheets via e-mail</td><td>CSV gratis, Excel con Pro</td></tr>
+        <tr><th>Elenco della classe e assenti</th><td>A mano</td><td>No</td><td>Con Pro</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Domande frequenti</h2>
+    <h3>Come esporto l'elenco dei partecipanti di Meet in Excel?</h3>
+    <p>Ho scritto una <a href="/esportare-partecipanti-google-meet-excel/">guida passo per passo</a>. In breve: Meet non ha un pulsante per esportare l'elenco mentre la chiamata è in corso. Hai due strade: il report di Google (solo con le edizioni che lo includono) oppure un'estensione come Appelo, che a fine lezione ti dà un file CSV da aprire in Excel.</p>
+    <h3>Appelo funziona anche con un account Gmail gratuito?</h3>
+    <p>Non richiede un'edizione a pagamento di Workspace: legge l'elenco dei partecipanti che vedi sulla pagina di Meet. Funziona su Chrome e sui browser basati su Chrome, da computer.</p>
+    <h3>Cosa succede se uno studente esce e rientra?</h3>
+    <p>Appelo considera l'assenza una "pausa" solo se dura più di 15 secondi, e somma il tempo di tutti gli ingressi. Così una caduta di connessione non altera la presenza.</p>
+    <h3>Dove vengono salvati i dati?</h3>
+    <p>Solo nel tuo browser. Appelo non invia i nomi dei partecipanti a nessun server.</p>
+    <h3>Quanto costa il piano Pro?</h3>
+    <p>3,99 euro al mese, 29 euro all'anno oppure 59 euro una volta sola. La versione gratuita resta utilizzabile senza limiti di tempo e conserva le ultime 3 riunioni; trovi il dettaglio nella <a href="/#pricing">pagina dei prezzi</a>.</p>
+  </article>
+
+  <footer>
+    <a href="/">Appelo</a> <a href="/privacy/#it">Privacy</a> <a href="mailto:appelo.app01@gmail.com">Contatti</a>
+    <p>Appelo non è affiliata a Google. Google Meet è un marchio di Google LLC.</p>
+  </footer>
+</div>
+</body>
+</html>

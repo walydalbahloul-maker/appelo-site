@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://appelo.app/</loc></url>
+  <url>
+    <loc>https://appelo.app/presenze-google-meet/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://appelo.app/presenze-google-meet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appelo.app/en/google-meet-attendance/"/>
+  </url>
+  <url>
+    <loc>https://appelo.app/en/google-meet-attendance/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://appelo.app/presenze-google-meet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appelo.app/en/google-meet-attendance/"/>
+  </url>
+  <url><loc>https://appelo.app/esportare-partecipanti-google-meet-excel/</loc></url>
+  <url><loc>https://appelo.app/privacy/</loc></url>
+</urlset>
