@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modello di registro presenze per lezioni online (Excel)</title>
+<meta name="description" content="Un modello gratuito di registro presenze per lezioni online da scaricare e usare in Excel, con le formule per contare presenze e percentuali, e come compilarlo da Google Meet.">
+<link rel="canonical" href="https://appelo.app/registro-presenze-lezioni-online/">
+<style>
+  :root { color-scheme: light dark; --bg: #fff; --fg: #1f2328; --muted: #5f6b7a; --line: #e3e7ec; --accent: #1a56c8; --card: #f6f8fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #16191d; --fg: #e6e9ee; --muted: #9aa5b4; --line: #333a43; --accent: #8ab4f8; --card: #1d2126; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif; }
+  .wrap { max-width: 740px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 22px 0 6px; border-bottom: 1px solid var(--line); }
+  header a { font-weight: 700; text-decoration: none; font-size: 20px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 28px 0 10px; }
+  h2 { font-size: 24px; margin: 38px 0 8px; }
+  h3 { font-size: 19px; margin: 24px 0 4px; }
+  p, li { margin: 9px 0; }
+  a { color: var(--accent); }
+  code { background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; font-size: 0.92em; }
+  .muted { color: var(--muted); font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: start; vertical-align: top; padding: 9px 10px; border: 1px solid var(--line); }
+  th { background: var(--card); }
+  .btn { display: inline-block; margin-top: 8px; padding: 11px 20px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .btn { color: #101318; } }
+  footer { border-top: 1px solid var(--line); margin-top: 44px; padding: 20px 0 44px; font-size: 14px; color: var(--muted); }
+  footer a { margin-inline-end: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="/">Appelo</a></header>
+  <article>
+    <h1>Modello di registro presenze per lezioni online (Excel)</h1>
+    <p class="muted">Ultimo aggiornamento: 12 novembre 2026</p>
+    <p>Un registro delle presenze per le lezioni online è una tabella semplice: <strong>una riga per studente e una colonna per lezione</strong>, con un segno per chi c'era. Qui trovi un modello gratuito da scaricare, le formule per contare presenze e percentuali, e due modi per compilarlo senza ricopiare tutto a mano.</p>
+
+    <h2>Scarica il modello</h2>
+    <p><a class="btn" href="/downloads/registro-presenze-lezioni-online.csv" download>Scarica il modello (CSV, si apre in Excel)</a></p>
+    <p>Contiene la colonna <em>Studente</em>, dieci colonne <em>Lezione</em> e due colonne di riepilogo (<em>Totale presenze</em> e <em>% presenze</em>) da compilare con le formule qui sotto. Si apre in Excel, in LibreOffice e in Fogli Google, e puoi aggiungere le righe e le colonne che ti servono.</p>
+
+    <h2>Come si compila</h2>
+    <ol>
+      <li>Scrivi i nomi degli studenti nella prima colonna.</li>
+      <li>Per ogni lezione, scrivi <strong>P</strong> se c'era e lascia vuoto (o scrivi <strong>A</strong>) se mancava.</li>
+      <li>Nella colonna <em>Totale presenze</em> usa la formula, con la riga e le colonne giuste:
+        <br>in Excel in italiano: <code>=CONTA.SE(B2:K2;"P")</code>
+        <br>in Excel in inglese: <code>=COUNTIF(B2:K2,"P")</code></li>
+      <li>Nella colonna <em>% presenze</em> dividi per il numero di lezioni:
+        <br><code>=L2/10</code> e imposta il formato della cella su Percentuale.</li>
+      <li>Trascina le formule verso il basso per tutti gli studenti.</li>
+    </ol>
+    <p class="muted">Se nel tuo foglio le colonne sono diverse da B-K, adatta gli intervalli. I nomi delle funzioni cambiano con la lingua di Excel.</p>
+
+    <h2>Compilarlo senza ricopiare a mano</h2>
+    <h3>Dal report di Google Meet</h3>
+    <p>Se la tua edizione di Google Workspace lo include, a fine riunione ricevi un foglio con chi è entrato, quando e per quanto tempo (vedi la <a href="https://support.google.com/meet/answer/10090454" rel="noopener">pagina di aiuto di Google</a>). Da lì ricopi le presenze nel tuo registro.</p>
+    <h3>Con Appelo</h3>
+    <p><a href="/">Appelo</a> è un'estensione gratuita per Chrome che registra da sola chi entra nella lezione e, a fine chiamata, esporta un file CSV che si apre in Excel con nome, primo ingresso, ultima uscita, minuti e percentuale della lezione. Da quel file riporti una <strong>P</strong> nel registro accanto a ogni nome presente. Con il piano Pro (facoltativo) puoi caricare l'elenco della classe e ottenere anche gli <strong>assenti</strong>, l'esportazione diretta in Excel e un report di frequenza nel tempo, che sostituisce il calcolo a mano.</p>
+    <p><a class="btn" href="https://chromewebstore.google.com/detail/gkokfmbjipocpajnpjgipoipjolobmfo">Aggiungi a Chrome, è gratis</a></p>
+
+    <h2>Domande frequenti</h2>
+    <h3>Posso usarlo anche per lezioni in presenza?</h3>
+    <p>Sì, è un normale foglio di presenze: la parte che riguarda Google Meet serve solo per compilarlo più in fretta.</p>
+    <h3>Il modello è libero da usare?</h3>
+    <p>Sì. Puoi modificarlo, stamparlo e condividerlo con i tuoi colleghi.</p>
+    <h2>Guide correlate</h2>
+    <ul>
+      <li><a href="/presenze-google-meet/">Come segnare le presenze su Google Meet</a></li>
+      <li><a href="/esportare-partecipanti-google-meet-excel/">Come esportare i partecipanti di Google Meet in Excel</a></li>
+      <li><a href="/ritardi-lezione-google-meet/">Come sapere chi è entrato in ritardo su Google Meet</a></li>
+      <li><a href="/registro-presenze-lezioni-online/">Modello di registro presenze per lezioni online</a></li>
+      <li><a href="/vedere-chi-c-era-riunione-meet/">Come vedere chi c'era a una riunione Meet già finita</a></li>
+    </ul>
+    <p class="muted">Appelo non è affiliata a Google. Google Meet è un marchio di Google LLC.</p>
+  </article>
+  <footer>
+    <a href="/">Appelo</a> <a href="/privacy/#it">Privacy</a> <a href="mailto:appelo.app01@gmail.com">Contatti</a>
+    <p>Appelo non è affiliata a Google. Google Meet è un marchio di Google LLC.</p>
+  </footer>
+</div>
+</body>
+</html>

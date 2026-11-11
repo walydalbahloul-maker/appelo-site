@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Come sapere chi è entrato in ritardo su Google Meet</title>
+<meta name="description" content="Tre modi per controllare chi è arrivato in ritardo a una lezione su Google Meet: orari di ingresso, report di Google e un'estensione con regola dei minuti di ritardo.">
+<link rel="canonical" href="https://appelo.app/ritardi-lezione-google-meet/">
+<style>
+  :root { color-scheme: light dark; --bg: #fff; --fg: #1f2328; --muted: #5f6b7a; --line: #e3e7ec; --accent: #1a56c8; --card: #f6f8fb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #16191d; --fg: #e6e9ee; --muted: #9aa5b4; --line: #333a43; --accent: #8ab4f8; --card: #1d2126; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif; }
+  .wrap { max-width: 740px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 22px 0 6px; border-bottom: 1px solid var(--line); }
+  header a { font-weight: 700; text-decoration: none; font-size: 20px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 28px 0 10px; }
+  h2 { font-size: 24px; margin: 38px 0 8px; }
+  h3 { font-size: 19px; margin: 24px 0 4px; }
+  p, li { margin: 9px 0; }
+  a { color: var(--accent); }
+  code { background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; font-size: 0.92em; }
+  .muted { color: var(--muted); font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: start; vertical-align: top; padding: 9px 10px; border: 1px solid var(--line); }
+  th { background: var(--card); }
+  .btn { display: inline-block; margin-top: 8px; padding: 11px 20px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .btn { color: #101318; } }
+  footer { border-top: 1px solid var(--line); margin-top: 44px; padding: 20px 0 44px; font-size: 14px; color: var(--muted); }
+  footer a { margin-inline-end: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="/">Appelo</a></header>
+  <article>
+    <h1>Come sapere chi è entrato in ritardo a una lezione su Google Meet</h1>
+    <p class="muted">Ultimo aggiornamento: 12 novembre 2026</p>
+    <p>Per sapere chi è arrivato in ritardo ti servono due cose: l'<strong>ora esatta in cui ognuno è entrato</strong> e una <strong>regola</strong> che dice dopo quanti minuti si conta il ritardo (5, 10, 15…). Meet da solo non te lo dice, ma ci sono tre modi per arrivarci.</p>
+
+    <h2>1. Guardare l'ora a mano</h2>
+    <p>Durante la lezione tieni aperto il pannello <strong>Persone</strong> e annoti, accanto a ogni nome, a che ora è comparso. Va bene per classi piccole, ma è facile sbagliare quando entrano in tanti insieme, e Meet non mostra l'ora di ingresso accanto ai nomi.</p>
+
+    <h2>2. Il report di presenze di Google</h2>
+    <p>Se la tua edizione di Google Workspace include il monitoraggio delle presenze (Education Plus, Teaching and Learning Upgrade, Business Plus, edizioni Enterprise e altre: l'elenco aggiornato è sulla <a href="https://support.google.com/meet/answer/10090454" rel="noopener">pagina di aiuto di Google</a>), a fine riunione l'organizzatore riceve un foglio Google Sheets con <strong>ora di ingresso, ora di uscita e durata</strong> di ognuno.</p>
+    <p>Per trovare i ritardatari confronti la colonna dell'ora di ingresso con l'ora di inizio della lezione. Il calcolo lo fai tu, a mano o con una formula nel foglio, e il report arriva solo dopo la riunione.</p>
+
+    <h2>3. Un'estensione con la regola dei minuti: Appelo</h2>
+    <p><a href="/">Appelo</a> è un'estensione gratuita per Chrome che ho creato io. Registra l'ora in cui ogni persona entra nella chiamata e, nella versione <strong>Pro</strong>, applica da sola una regola di ritardo:</p>
+    <ul>
+      <li>Nelle impostazioni scegli dopo quanti minuti si è <strong>"In ritardo"</strong> (di partenza sono 10).</li>
+      <li>Scegli anche per quanta parte della lezione bisogna esserci per essere "Presente" (di partenza il 75%): chi resta meno risulta <strong>"Parziale"</strong>.</li>
+      <li>Nel file esportato compare la colonna <strong>Stato</strong> con Presente, In ritardo, Parziale o Assente.</li>
+      <li>Con un elenco di classe, chi non è mai entrato risulta <strong>Assente</strong>.</li>
+    </ul>
+    <p>Anche nella versione gratuita il file riporta l'<strong>ora del primo ingresso</strong> di ogni persona, così il ritardo lo vedi a colpo d'occhio. Chi esce e rientra viene contato una volta sola, con il tempo totale giusto. I dati restano nel tuo browser.</p>
+    <p><a class="btn" href="https://chromewebstore.google.com/detail/gkokfmbjipocpajnpjgipoipjolobmfo">Aggiungi a Chrome, è gratis</a></p>
+
+    <h2>Quale scegliere</h2>
+    <table>
+      <thead><tr><th></th><th>A mano</th><th>Report di Google</th><th>Appelo</th></tr></thead>
+      <tbody>
+        <tr><th>Ora di ingresso</th><td>Da annotare tu</td><td>Sì, a fine riunione</td><td>Sì, anche nella versione gratuita</td></tr>
+        <tr><th>Regola dei minuti di ritardo</th><td>A mente</td><td>La applichi tu sul foglio</td><td>Con Pro, automatica</td></tr>
+        <tr><th>Serve un'edizione Workspace particolare</th><td>No</td><td>Sì</td><td>No</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Domande frequenti</h2>
+    <h3>Come si conta chi esce e rientra?</h3>
+    <p>Appelo considera un'assenza come una vera uscita solo se dura più di 15 secondi. Per l'ora di ritardo conta il primo ingresso.</p>
+    <h3>Posso cambiare i minuti di ritardo?</h3>
+    <p>Sì, nella pagina delle impostazioni di Appelo (con Pro) scegli i minuti e la percentuale di presenza che preferisci. Le regole si applicano al momento in cui guardi o esporti i dati, quindi puoi cambiarle anche dopo.</p>
+    <h2>Guide correlate</h2>
+    <ul>
+      <li><a href="/presenze-google-meet/">Come segnare le presenze su Google Meet</a></li>
+      <li><a href="/esportare-partecipanti-google-meet-excel/">Come esportare i partecipanti di Google Meet in Excel</a></li>
+      <li><a href="/ritardi-lezione-google-meet/">Come sapere chi è entrato in ritardo su Google Meet</a></li>
+      <li><a href="/registro-presenze-lezioni-online/">Modello di registro presenze per lezioni online</a></li>
+      <li><a href="/vedere-chi-c-era-riunione-meet/">Come vedere chi c'era a una riunione Meet già finita</a></li>
+    </ul>
+    <p class="muted">Appelo non è affiliata a Google. Google Meet è un marchio di Google LLC.</p>
+  </article>
+  <footer>
+    <a href="/">Appelo</a> <a href="/privacy/#it">Privacy</a> <a href="mailto:appelo.app01@gmail.com">Contatti</a>
+    <p>Appelo non è affiliata a Google. Google Meet è un marchio di Google LLC.</p>
+  </footer>
+</div>
+</body>
+</html>
